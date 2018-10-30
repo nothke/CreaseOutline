@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4581575228157584}
   - component: {fileID: 20477904339202914}
-  - component: {fileID: 92042119250281998}
   - component: {fileID: 124438913088098726}
   - component: {fileID: 81948836154225928}
   - component: {fileID: 114501935079659342}
@@ -55,7 +54,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1139285595841420}
   m_LocalRotation: {x: -0, y: -0.22262557, z: -0, w: 0.97490406}
-  m_LocalPosition: {x: 3.039, y: 0.865, z: -9.003}
+  m_LocalPosition: {x: 2.691, y: 0.706, z: -9.12}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4920087365228920}
@@ -105,10 +104,12 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!20 &20800019200941610
 Camera:
   m_ObjectHideFlags: 1
@@ -139,19 +140,14 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!81 &81948836154225928
 AudioListener:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1139285595841420}
-  m_Enabled: 1
---- !u!92 &92042119250281998
-Behaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -170,6 +166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   multShader: {fileID: 4800000, guid: 767796c01ccd61747bca0438a4eb36fd, type: 3}
   renderCamera: {fileID: 20800019200941610}
+  outlineColor: {r: 1, g: 0.59999996, b: 0, a: 0.047}
 --- !u!114 &114927357703764862
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -178,12 +175,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1166027073171210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d64b4f3a592f28b44bf19223ac8b6cd2, type: 3}
+  m_Script: {fileID: 11500000, guid: 37715956df23156429eaf0f20858605c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  intensity: 3.44
+  intensity: 2
   softness: 1
-  spread: 0.9
+  spread: 1
   blurShader: {fileID: 4800000, guid: e97c14fbb5ea04c3a902cc533d7fc5d1, type: 3}
   depthFetchShader: {fileID: 4800000, guid: 14768d3865b1342e3a861fbe19ba2db2, type: 3}
   creaseApplyShader: {fileID: 4800000, guid: b59984d82af624bd3b0c777f038276f2, type: 3}

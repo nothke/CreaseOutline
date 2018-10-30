@@ -18,7 +18,7 @@ namespace Nothke.CreaseOutline
 
         public override bool CheckResources()
         {
-            CheckSupport(true);
+            CheckSupport(false);
 
             multMaterial = CheckShaderAndCreateMaterial(multShader, multMaterial);
             //multMaterial.SetTexture("_MultTex", r2t);
